@@ -6,8 +6,6 @@ import MovieStreamImg from '../../assets/Captura de pantalla 2023-12-16 133922.p
 import ShaikImg from '../../assets/Captura de pantalla 2023-09-18 121752.png';
 import './style.css'
 
-
-
 /**
  * Componente que muestra una lista de proyectos realizados, con imágenes, descripciones y enlaces a los repositorios de GitHub.
  */
@@ -49,20 +47,34 @@ const projectsData = [
 const Projects = () => {
   return (
     <div>
+      {/* Título de la sección */}
       <h1>Proyectos</h1>
+      
+      {/* Mapeo de datos de proyectos para renderizar cada proyecto */}
       {projectsData.map((project, index) => (
         <div key={index} className="project-container">
+          {/* Título del proyecto */}
           <h2>{project.title}</h2>
+          
+          {/* Contenedor del proyecto */}
           <div className="project">
+            {/* Enlace a la página del proyecto */}
             <a href={project.link}>
+              {/* Imagen del proyecto */}
               <img className="project-img" src={project.imgSrc} alt='' />
             </a>
+            
+            {/* Descripción del proyecto */}
             <p className="project-description">{project.description}</p>
+            
+            {/* Lista de herramientas utilizadas */}
             <ul className="tools-list">
               {project.tools.map((tool, toolIndex) => (
                 <li key={toolIndex}>{tool}</li>
               ))}
             </ul>
+            
+            {/* Enlace al repositorio de GitHub */}
             <a className="github-link" href={project.githubLink}>
               Ver GitHub
             </a>
@@ -73,4 +85,4 @@ const Projects = () => {
   );
 };
 
-export { Projects};
+export { Projects };
