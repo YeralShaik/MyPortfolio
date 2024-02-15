@@ -1,0 +1,214 @@
+.project-container{
+    padding: 20px;
+    height: 380px;
+    margin: 40px 70px 40px 70px  ;
+    background: #e2dfe128;
+    border-radius: 12px;
+}
+
+h1 {
+  padding-top: 20px;
+  color: #ffec81;
+  text-align: center;
+  text-shadow: 0 0 8px #5c1633;
+  padding-left: 24px ;
+  font-size: 40px;
+}
+.project-container h2 {
+  margin-top: 16px;
+}
+.project {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+
+}
+
+h2 {
+  color: #ffec81; 
+  text-shadow: 0 0 8px #5c1633;
+    padding-left: 24px ;
+}
+.project-img {
+    width: 330px;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .project-img:hover {
+    border: 6px solid #ffec81;
+    overflow: hidden;
+
+  }
+  
+
+  
+  /* Styles for the project description */
+  .project p {
+    font-size: 16px;
+    padding: 16px;
+    margin-bottom: 10px;
+  }
+
+  .tools-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.548);
+    margin: 8px;
+    padding: 0px;
+  }
+
+.github-link,
+.additional-link {
+  width: 120px;
+  height: 28px;
+  text-align: center;
+  flex: 1;
+  text-decoration: none;
+  padding: 16px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border-radius: 12px;
+  cursor: pointer;
+  margin-left: 80%;
+}
+
+.github-link:hover,
+.additional-link:hover {
+  background-color: #ffec81;
+  color: #960340;
+}
+
+/* Styles for the project description */
+.project-description {
+  font-size: 20px;
+  font-weight: 400; 
+  height: auto;
+
+}
+
+
+a {
+  width: 0px;
+  margin: 0;
+  padding: 0;
+  height: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .project-container{
+    padding: 20px;
+    height: auto;
+    margin: 40px 40px 40px 40px  ;
+    background: #e2dfe128;
+    border-radius: 12px;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.project-container h2 {
+  margin-top: 16px;
+}
+
+.project {
+    width: auto;
+    text-align: center;
+    padding: 12px;
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.project-img {
+    width: 290px;
+    height: auto;
+    margin-left: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+  }
+  
+  .tools-list {
+    justify-content: center;
+    gap: 10px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.719);
+    margin: 0px;
+    padding: 10px;
+    padding-top: 10px;
+
+  }
+
+  .github-link,
+  .additional-link {
+    width: 95px;
+    height: 24px;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-description {
+    font-size: 20px;
+    font-weight: 400;   
+    width: 90%;
+    margin-top: 190px;
+    text-align: center;
+
+
+    
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+  .project-container{
+    padding: 20px;
+    height: auto;
+    margin: 40px 40px 40px 40px  ;
+    background: #e2dfe128;
+    border-radius: 12px;
+    width: auto;
+    
+}
+
+.project-container h2 {
+  margin-top: 16px;
+}
+.project {
+    padding: 16px;
+    justify-content: center;
+
+}
+
+.project-img {
+    width: 280px;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+
+  }
+  
+  .tools-list {
+    
+    gap: 10px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.719);
+    margin: 0px;
+    padding: 10px;
+    padding-top: 10px;
+  }
+
+.github-link,
+.additional-link {
+ 
+  margin-left: 40%;
+}
+}

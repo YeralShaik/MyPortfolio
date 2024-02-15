@@ -4,6 +4,8 @@ import Linkdin from '../../assets/Vector.png';
 import Instagram from '../../assets/logoinstagram.png';
 import Github from '../../assets/Vector-1.png';
 
+import './style.css'
+
 
 /**
  * Componente que representa la sección principal de la página de inicio.

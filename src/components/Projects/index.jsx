@@ -1,10 +1,10 @@
 // Projects.js
 import React from 'react';
-import gitApp from '../../assets/Captura de pantalla 2023-12-16 133922.png';
+import gitApp from '../../assets/Captura de pantalla 2023-12-18 112528.png';
 import happyPetImg from '../../assets/Captura de pantalla 2023-12-16 142540.png';
 import MovieStreamImg from '../../assets/Captura de pantalla 2023-12-16 133922.png';
 import ShaikImg from '../../assets/Captura de pantalla 2023-09-18 121752.png';
-
+import './style.css'
 
 
 
@@ -49,6 +49,7 @@ const projectsData = [
 const Projects = () => {
   return (
     <div>
+      <h1>Proyectos</h1>
       {projectsData.map((project, index) => (
         <div key={index} className="project-container">
           <h2>{project.title}</h2>

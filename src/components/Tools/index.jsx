@@ -14,6 +14,8 @@ import Nodejs from '../../assets/nodejs.png';
 import tailwind from '../../assets/tailwind.png';
 import Adobe from '../../assets/pngwing.com.png';
 
+import './style.css'
+
 
 
 

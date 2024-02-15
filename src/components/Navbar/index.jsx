@@ -1,29 +1,48 @@
 // Navbar.js
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { FaBars } from "react-icons/fa6";
 import './Navbar.css'
-
-
 
 
 /**
  * Componente que representa la barra de navegación en la parte superior de la aplicación.
  * Contiene enlaces a diferentes secciones de la aplicación.
  */
-const Navbar = () => {
+
+
+function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
   return (
     <nav className="navBar-container">
       <div className="navlogo">
-        <p>My Portfolio</p>
+        <h1> My Portfolio </h1>
       </div>
-      <ul>
-        <li><NavLink to="/" activeClassName="active">Home</NavLink></li>
-        <li><NavLink to="/Sobre Mi" activeClassName="active">Sobre Mi</NavLink></li>
+       
+         {/* Barra de navegación para escritorio */}
+        <ul className="nav-links">
+        <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
+        <li><NavLink to="/SobreMi" activeClassName="active">Sobre Mi</NavLink></li>
         <li><NavLink to="/Habilidades" activeClassName="active">Habilidades</NavLink></li>
-        <li><NavLink to="/Proyectos" activeClassName="active">Proyectos</NavLink></li>
+        <li><NavLink to="/Projects" activeClassName="active">Projects</NavLink></li>
       </ul>
+       {/* Icono para menú móvil */}
+       <FaBars onClick={ toggleMobileMenu} className="navbar-icon active" />
+        {/* Menú desplegable para móvil */}
+        {mobileMenuOpen && (
+        <ul className="nav-mobile">
+            <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
+        <li><NavLink to="/SobreMi" activeClassName="active">Sobre Mi</NavLink></li>
+        <li><NavLink to="/Habilidades" activeClassName="active">Habilidades</NavLink></li>
+        <li><NavLink to="/Projects" activeClassName="active">Projects</NavLink></li>
+        </ul>
+      )}
     </nav>
   );
 }
 
-export default Navbar
+export default Navbar;

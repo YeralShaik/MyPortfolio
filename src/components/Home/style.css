@@ -1,0 +1,186 @@
+/*Home*/
+
+.Home-container {
+    display: flex;
+    flex-direction: row; 
+    width: auto;
+    height: 650px;
+    margin-left: 70px;
+    margin-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+
+  }
+
+  #name {
+    color: #ffec81; 
+    text-shadow: 0 0 8px #5c1633;
+  }
+
+
+  .Home-text {
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+    padding: 12px;
+    order: 1;
+    font-size: 28px;
+    margin-left: 50px;
+      color: #eeeeee;
+  }
+
+  .Home-img {
+    position: relative;
+    display: inline-block;
+    margin-top: 0px;
+    margin-right: 220px;  
+    order: 2;
+    align-items: center;
+    justify-content: center;
+  }
+
+h1 {
+  margin: 4px;
+}
+ 
+  .text-occupation{
+    margin-top: 4px;
+    padding-top: 8px;
+    color: white;
+    text-shadow: 0 0 8px #ac1f65; 
+    font-weight:bold;
+    font-size: 30px;
+  }
+
+
+  .bienvenida {
+    font-size: 20px;
+    margin-top: 24px;
+  }
+.Contact {
+    width: 130px;
+    height: 48px;
+    margin-top: 32px;
+    color: #d6d6d6;
+    background: #EA0599;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 16px;
+    font-weight: bold;
+      overflow: hidden;
+  box-shadow: 0 0 8px #4e052a;
+  }
+.Contact:hover {
+  background-color: #FFD0EC;
+  color: #1F2544;
+    overflow: hidden;
+  box-shadow: 0 0 10px #FFD0EC;
+}
+
+  .imgProfile {
+    flex: 2; /* Ajusta este valor según sea necesario para dar más espacio a imgProfile */
+    flex-basis: 0;
+    background-color: rgb(209, 167, 207);
+    border: solid #d6d6d6;
+    box-shadow: 0 0 28px #3c0263; /* Sombra del texto */
+    width: 110%;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+
+  }
+  
+
+  .footer {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: end;
+    gap: 30px;
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+   
+/*Home*/
+
+.Home-container {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+  width: 550px;
+  margin-left: 10px;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 200px;
+ 
+
+}
+
+#name {
+font-size: 32px;
+text-align: center;
+
+}
+
+
+.Home-text {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  text-align: left;
+  padding: 12px;
+  order: 2;
+  font-size: 28px;
+  margin-left: 50px;
+    color: #eeeeee;
+}
+
+.Home-img {
+
+  margin-top: 0px;
+  margin-right: 220px;  
+  order: 1;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.bienvenida {
+  padding: 16px;
+  font-size: 16px;
+  margin-top: 32px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.text-occupation{
+  text-align: center;
+  font-size: 20px;
+}
+
+.img-container {
+  display: grid;
+  place-items: center;
+}
+.imgProfile {
+  place-items: center;
+    width: 60%;
+  height: auto;
+ 
+}
+.footer {
+  display: flex;
+  height: 40px;
+  gap: 20px;
+}
+ .footer img {
+  width: 20px;
+ }
+
+}

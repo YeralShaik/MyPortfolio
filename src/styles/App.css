@@ -1,30 +1,31 @@
 html {
-  background: hsla(336, 95%, 47%, 1);
+  background: hsla(268, 21%, 51%, 1);
 
-  background: linear-gradient(315deg, hsla(336, 95%, 47%, 1) 0%, hsla(332, 97%, 47%, 1) 4%, hsla(311, 45%, 28%, 1) 25%, hsla(295, 43%, 16%, 1) 50%, hsla(0, 0%, 5%, 1) 90%);
+  background: linear-gradient(225deg, hsla(268, 21%, 51%, 1) 0%, hsla(231, 26%, 38%, 1) 8%, hsla(230, 37%, 19%, 1) 100%);
   
-  background: -moz-linear-gradient(315deg, hsla(336, 95%, 47%, 1) 0%, hsla(332, 97%, 47%, 1) 4%, hsla(311, 45%, 28%, 1) 25%, hsla(295, 43%, 16%, 1) 50%, hsla(0, 0%, 5%, 1) 90%);
+  background: -moz-linear-gradient(225deg, hsla(268, 21%, 51%, 1) 0%, hsla(231, 26%, 38%, 1) 8%, hsla(230, 37%, 19%, 1) 100%);
   
-  background: -webkit-linear-gradient(315deg, hsla(336, 95%, 47%, 1) 0%, hsla(332, 97%, 47%, 1) 4%, hsla(311, 45%, 28%, 1) 25%, hsla(295, 43%, 16%, 1) 50%, hsla(0, 0%, 5%, 1) 90%);
+  background: -webkit-linear-gradient(225deg, hsla(268, 21%, 51%, 1) 0%, hsla(231, 26%, 38%, 1) 8%, hsla(230, 37%, 19%, 1) 100%);
   
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E80660", endColorstr="#ED0472", GradientType=1 );
-}
-* {
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#81689D", endColorstr="#474F7A", GradientType=1 );
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  object-fit: cover;
 }
 
 /* Define root-level variables for colors and fonts */
 :root {
   --background: #0d0d0d;
-  --primary: #e80665;
+  --primary: #fc63bf;
   --secondary: #ffff;
   --terciary: #f5f5f5;
+  --purple: #81689D;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .root {
-  width: 100%;
+  width:auto;
   height: auto;
 }
+

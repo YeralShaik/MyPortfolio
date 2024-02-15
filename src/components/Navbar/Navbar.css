@@ -12,6 +12,10 @@
     align-items: center;
     border-bottom: solid #e7e7e718;
   }
+  .navbar-icon {
+    display: none;
+    cursor: pointer;
+  }
   
   /* Estilos para el logo en la barra de navegación */
   .navlogo {
@@ -25,86 +29,126 @@
   }
   
   /* Estilos para el texto dentro del logo */
-  .navlogo p {
+  .navlogo h1 {
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
     padding: 5px;
     border-radius: 5px;
-    color: #fdff81; 
-    text-shadow: 0 0 10px #4e052a; 
+    color: #ffec81; 
+    text-shadow: 0 0 10px #fd4692;
     font-family: Arial, Helvetica, sans-serif;
     
   }
   
   /* Estilos para la lista en la barra de navegación */
-  ul {
+  .nav-links {
     list-style: none;
     display: flex;
-    padding-left: 50%;
+    padding-left: 40%;
     gap: 25px;
-    font-weight: bold;
     border-radius: 5px;
-    color: #ffffff; /* Color del texto */
+    color: #ffffff; 
+    cursor: pointer;
+
+
   }
   
   /* Estilos para los enlaces en la barra de navegación */
   .navBar-container ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 0 0 20px #ee93b9;
+    text-shadow:0 0 10px #fd4692;
   }
   
   /* Estilos para los enlaces activos en la barra de navegación */
   .navBar-container ul li a.active {
-    color: #fdff81; 
-    text-shadow: 0 0 8px #4e052a; 
+    color: #ffec81; 
+    text-shadow: 0 0 10px #fd4692;
    
   }
   
-  
-  /* Estilos para el botón "changeLanguage" */
-  #changeLanguage {
-    width: 70px;
-    height: 25px;
-    margin-right: 8px;
-    font-size: 16px; /* Corregido el valor de font-size */
-    color: #e80664;
-    background: #f5f5f5;
-    border-radius: 8px;
-    position: relative;
-  
+   
+  .mobile-icon {
+    display: none; 
+    cursor: pointer;
   }
   
+  .nav-mobile {
+    display: none;
+    list-style: none;
+    padding: 0;
+  }
   
-  @media only screen and (max-width: 780px) {
-    .navBar-container {
-      width: 100%;
-      padding-right: 42px;
-    
+  .nav-mobile li {
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  /* Estilos específicos para dispositivos móviles usando media query */
+  
+  @media only screen and (max-width: 600px) {
+   .navBar-container{
+    width: 90%;
+
+   }
+    .navbar-icon {
+      display: block; 
     }
+  
+    .nav-mobile {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100px; /* Ajustar según tu diseño */
+      right: 10px;
+      background-color: hsla(268, 21%, 51%, 1);
+
+      background: linear-gradient(225deg, hsla(268, 21%, 51%, 1) 0%, hsla(231, 26%, 38%, 1) 8%, hsla(230, 37%, 19%, 1) 100%);
+      
+      background: -moz-linear-gradient(225deg, hsla(268, 21%, 51%, 1) 0%, hsla(231, 26%, 38%, 1) 8%, hsla(230, 37%, 19%, 1) 100%);
+      
+      background: -webkit-linear-gradient(225deg, hsla(268, 21%, 51%, 1) 0%, hsla(231, 26%, 38%, 1) 8%, hsla(230, 37%, 19%, 1) 100%);
+      
+      filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#81689D", endColorstr="#474F7A", GradientType=1 );
+      color: white;
+      border: 1px solid #555;
+      border-radius: 5px;
+      padding: 6px;
+      text-align: center;
+    }
+
     
+    .nav-links {
+      display: none;
+    }
+  
     .navlogo{
-      width: 150px;
+      width: auto;
       margin: 0;
-      height: 100px;
-     
+      height: 100px; 
     }
     
   /* Estilos para el texto dentro del logo */
   .navlogo p {
      font-size: 20px;
-    
-    
+          
   }
   
+  .navbar-icon {
+    color: #ffec81;
+    display: block;
+    font-size: 36px;
+    cursor: pointer;
+  }
   /* Estilos para la lista en la barra de navegación */
   ul {
-    padding-left: 10%;
+    padding-left: 0%;
     gap: 16px;
-   
+    display: none;
   }
   
   /* Estilos para los enlaces en la barra de navegación */
@@ -112,14 +156,18 @@
     font-size: 16px;
   }
   
-  
   }
   
   
   @media only screen and (min-width: 768px) and (max-width: 991px)  {
   
    
+    .navBar-container {
+      width: auto;
+      padding-right: 42px;
+  
     
+    }
   /* Estilos para el texto dentro del logo */
   .navlogo p {
      font-size: 24px;
@@ -128,15 +176,15 @@
   
   /* Estilos para la lista en la barra de navegación */
   ul {
-    padding-left: 10%;
+    padding-left: 5%;
     gap: 16px;
   }
   
   /* Estilos para los enlaces en la barra de navegación */
   .navBar-container ul li a {
-    font-size: 16px;
+    font-size: 16pxpx;
   }
   
   
   }
-  
+}
