@@ -20,6 +20,7 @@
   .aboutMe-CV {
     align-items: baseline;
     display: flex;
+    width: 150px;
   }
   
   .download-icon {
@@ -45,8 +46,8 @@
     
   }
   .aboutMe-CV span:hover {
-    background-color: #540489;
-    color: #fff;
+    background-color: #fdff81;
+    color: #540489;
   }
   
   .aboutMe-container p {

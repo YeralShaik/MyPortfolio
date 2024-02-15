@@ -40,6 +40,7 @@ h2 {
   .project-img:hover {
     border: 6px solid #ffec81;
     overflow: hidden;
+    
 
   }
   
@@ -70,7 +71,7 @@ h2 {
   flex: 1;
   text-decoration: none;
   padding: 16px;
-  background-color: var(--primary);
+  background: #EA0599;
   color: var(--secondary);
   border-radius: 12px;
   cursor: pointer;
@@ -79,8 +80,8 @@ h2 {
 
 .github-link:hover,
 .additional-link:hover {
-  background-color: #ffec81;
-  color: #960340;
+  background-color: #fdff81;
+  color: #540489;
 }
 
 /* Styles for the project description */

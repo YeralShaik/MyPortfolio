@@ -72,10 +72,10 @@ h1 {
   box-shadow: 0 0 8px #4e052a;
   }
 .Contact:hover {
-  background-color: #FFD0EC;
-  color: #1F2544;
+  background-color: #fdff81;
+  color: #540489;
     overflow: hidden;
-  box-shadow: 0 0 10px #FFD0EC;
+  box-shadow: 0 0 10px #ff97d5;
 }
 
   .imgProfile {
