@@ -1,13 +1,8 @@
 html {
-  background: hsla(268, 21%, 51%, 1);
-
-  background: linear-gradient(225deg, hsla(268, 21%, 51%, 1) 0%, hsla(231, 26%, 38%, 1) 8%, hsla(230, 37%, 19%, 1) 100%);
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
-  background: -moz-linear-gradient(225deg, hsla(268, 21%, 51%, 1) 0%, hsla(231, 26%, 38%, 1) 8%, hsla(230, 37%, 19%, 1) 100%);
-  
-  background: -webkit-linear-gradient(225deg, hsla(268, 21%, 51%, 1) 0%, hsla(231, 26%, 38%, 1) 8%, hsla(230, 37%, 19%, 1) 100%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#81689D", endColorstr="#474F7A", GradientType=1 );
   box-sizing: border-box;
   margin: 0;
   padding: 0;
