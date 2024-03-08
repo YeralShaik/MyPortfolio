@@ -7,6 +7,7 @@ import { AboutMe } from './components/AboutMe/index';
 import { Projects } from './components/Projects';
 
 import './styles/App.css';
+import { Footer } from './components/Footer';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/Projects" element={<Projects />} />
         <Route path="/" element={<Home />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

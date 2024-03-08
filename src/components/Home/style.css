@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row; 
     width: auto;
-    height: 650px;
+    height: auto;
     margin-left: 70px;
     margin-right: 50px;
     padding-top: 40px;
@@ -49,7 +49,7 @@
     padding-top: 8px;
     color: white;
     text-shadow: 0 0 8px #ac1f65; 
-    font-weight:semi;
+    font-weight:bold;
     font-size: 30px;
   }
 
@@ -95,13 +95,16 @@
   }
   
 
-  .footer {
+  .social-Media--Icon {
     display: flex;
-    height: 60px;
-    justify-content: center;
+    height: 40px;
+    justify-content: space-evenly;
     align-items: end;
-    gap: 30px;
+
+    
+  
   }
+ 
 
 
 
@@ -177,13 +180,15 @@ text-align: center;
   height: auto;
  
 }
-.footer {
+.sociall-Media--Icon {
   display: flex;
   height: 40px;
   gap: 20px;
+
 }
- .footer img {
+ .social-Media--Icon img {
   width: 20px;
+
  }
 
 }

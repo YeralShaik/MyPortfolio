@@ -5,6 +5,7 @@ import Instagram from '../../assets/logoinstagram.png';
 import Github from '../../assets/Vector-1.png';
 
 import './style.css';
+import { Footer } from "../Footer";
 
 /**
  * Componente que representa la sección principal de la página de inicio.
@@ -41,7 +42,7 @@ const Home = () => {
       <div className="img-container">
         <img className="imgProfile" src={ImgProfile} alt="profilephoto" />
         {/* Enlaces a perfiles sociales */}
-        <div className="footer">
+        <div className="social-Media--Icon">
           <a href="https://www.linkedin.com/in/yeraldin-espinosa-716493197/" target="_blank" rel="noopener noreferrer">
             <img src={Linkdin} alt="linkedin" />
           </a>
@@ -56,5 +57,5 @@ const Home = () => {
     </div>
   );
 };
-
+ <Footer/>
 export { Home };
