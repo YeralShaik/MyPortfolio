@@ -9,13 +9,8 @@
     margin-right: 50px;
     padding-top: 40px;
     padding-bottom: 50px;
+    
 
-
-  }
-
-  #name {
-    color: #ffec81; 
-    text-shadow: 0 0 8px #5c1633;
   }
 
 
@@ -40,8 +35,13 @@
     justify-content: center;
   }
 
-h1 {
+.name {
   margin: 4px;
+  padding-top: 20px;
+  color: #ffec81;
+  text-align: left;
+  text-shadow: 0 0 8px #5c1633;
+  font-size: 40px;
 }
  
   .text-occupation{
@@ -49,14 +49,16 @@ h1 {
     padding-top: 8px;
     color: white;
     text-shadow: 0 0 8px #ac1f65; 
-    font-weight:bold;
+    font-weight:semi;
     font-size: 30px;
   }
 
 
   .bienvenida {
+    width: 80%;
     font-size: 20px;
     margin-top: 24px;
+    text-align: justify;
   }
 .Contact {
     width: 130px;

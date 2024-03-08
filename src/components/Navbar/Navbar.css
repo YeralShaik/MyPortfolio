@@ -2,7 +2,7 @@
 
 /* Estilos para el contenedor de la barra de navegación */
 .navBar-container {
-    width: 95%;
+    width: 90%;
     display: flex;
     padding-left: 16px;
     padding-right: 16px;
@@ -55,7 +55,7 @@
   }
   
   /* Estilos para los enlaces en la barra de navegación */
-  .navBar-container ul li a {
+  .navBar-container .active {
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -65,10 +65,16 @@
   }
   
   /* Estilos para los enlaces activos en la barra de navegación */
-  .navBar-container ul li a.active {
+  .navBar-container .active:hover {
     color: #ffec81; 
     text-shadow: 0 0 10px #fd4692;
+    text-decoration-line: underline
    
+  }
+  .active:focus {
+    color: #ffec81; 
+    text-shadow: 0 0 10px #fd4692;
+    text-decoration-line: underline
   }
   
    
@@ -133,8 +139,8 @@
     }
     
   /* Estilos para el texto dentro del logo */
-  .navlogo p {
-     font-size: 20px;
+    .navlogo p {
+      font-size: 20px;
           
   }
   
@@ -187,4 +193,3 @@
   
   
   }
-}

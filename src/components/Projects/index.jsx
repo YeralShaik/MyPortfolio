@@ -46,9 +46,9 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <div>
+    <>
       {/* Título de la sección */}
-      <h1>Proyectos</h1>
+      <h1 className='project-Title'>Proyectos</h1>
       
       {/* Mapeo de datos de proyectos para renderizar cada proyecto */}
       {projectsData.map((project, index) => (
@@ -58,14 +58,13 @@ const Projects = () => {
           
           {/* Contenedor del proyecto */}
           <div className="project">
-            {/* Enlace a la página del proyecto */}
-            <a href={project.link}>
+          
               {/* Imagen del proyecto */}
               <img className="project-img" src={project.imgSrc} alt='' />
-            </a>
+          
             
             {/* Descripción del proyecto */}
-            <p className="project-description">{project.description}</p>
+            <p className="project-description">{project.description}
             
             {/* Lista de herramientas utilizadas */}
             <ul className="tools-list">
@@ -73,15 +72,23 @@ const Projects = () => {
                 <li key={toolIndex}>{tool}</li>
               ))}
             </ul>
+            </p>
+           
             
-            {/* Enlace al repositorio de GitHub */}
+          </div>
+           {/* Enlace al repositorio de GitHub */}
+           <div className='link-Container'>
+            <a className="link" href={project.link}>
+              Ver Proyecto
+            </a>
+              {/* Enlace para ver el proyecto */}
             <a className="github-link" href={project.githubLink}>
               Ver GitHub
             </a>
-          </div>
+            </div>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 

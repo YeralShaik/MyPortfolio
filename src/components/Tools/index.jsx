@@ -24,7 +24,7 @@ const Tools = () => {
     <div className="tools">
       {/* Título de la sección */}
       <h1>Habilidades</h1>
-
+      <p>Estas son algunas de las habilidades que tengo para el desarrollo web con las siguientes tecnologías y frameworks con las que trabajo habitualmente.</p>
       {/* Fila de habilidades: Diseño */}
       <div className="skills-row">
         <img src={Photoshop} alt="Adobe Photoshop" />

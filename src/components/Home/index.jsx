@@ -21,7 +21,7 @@ const Home = () => {
     <div className="Home-container">
       {/* Sección de texto e información personal */}
       <div className="Home-text">
-        <h1 id="name">Yeraldin Espinosa</h1>
+        <h1 className="name">Yeraldin Espinosa</h1>
         <p id="ocupation" className="text-occupation">
           {'< Desarrolladora FrontEnd / Diseñadora UI />'}
         </p>

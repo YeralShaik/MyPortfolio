@@ -6,14 +6,17 @@
     border-radius: 12px;
 }
 
-h1 {
-  padding-top: 20px;
-  color: #ffec81;
-  text-align: center;
-  text-shadow: 0 0 8px #5c1633;
-  padding-left: 24px ;
-  font-size: 40px;
-}
+.project-Title {
+  
+    padding-top: 20px;
+    width: 100%;
+    padding-left: 80PX;
+    text-align: left;
+    color: #fdff81; 
+    text-shadow: 0 0 8px #4e052a; 
+    font-size: 32px;
+
+  }
 .project-container h2 {
   margin-top: 16px;
 }
@@ -34,21 +37,13 @@ h2 {
     width: 330px;
     height: auto;
     border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  .project-img:hover {
-    border: 6px solid #ffec81;
-    overflow: hidden;
-    
 
   }
   
-
   
   /* Styles for the project description */
   .project p {
-    font-size: 16px;
+    font-size: 18px;
     padding: 16px;
     margin-bottom: 10px;
   }
@@ -62,24 +57,44 @@ h2 {
     margin: 8px;
     padding: 0px;
   }
-
-.github-link,
-.additional-link {
-  width: 120px;
-  height: 28px;
+.link-Container{
+  align-items: flex-end;
+  display: inline-flex;
+  justify-content: end;
+ 
+  padding-left: 70%;
+  gap: 18px;
+}
+.github-link {
+  width: 100px;
+  height: 24px;
   text-align: center;
   flex: 1;
   text-decoration: none;
-  padding: 16px;
+  padding: 12px;
   background: #EA0599;
   color: var(--secondary);
   border-radius: 12px;
   cursor: pointer;
-  margin-left: 80%;
+ 
+}
+
+.link {
+  width: 100px;
+  height: 24px;
+  text-align: center;
+  flex: 1;
+  text-decoration: none;
+  padding: 12px;
+  background: #EA0599;
+  color: var(--secondary);
+  border-radius: 12px;
+  cursor: pointer;
+
 }
 
 .github-link:hover,
-.additional-link:hover {
+.link:hover {
   background-color: #fdff81;
   color: #540489;
 }

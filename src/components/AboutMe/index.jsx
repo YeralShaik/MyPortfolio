@@ -1,5 +1,6 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa6";
+import yeralCv from '../../assets/Yeraldin Espinosa  CV.pdf'
 import './style.css'
 
 /**
@@ -10,21 +11,23 @@ const AboutMe = () => {
   return (
     <div className='aboutMe-container '>
       {/* Título de la sección */}
-      <h2 className="aboutMe-Title">SOBRE MI</h2>
+      <h1 className="aboutMe-Title">Sobre mi</h1>
 
       {/* Texto descriptivo sobre el desarrollador */}
       <p className="aboutMe-Text" id="text">
-        🚀 🚀 ¡Bienvenido! Me especializo en diseño web y en la creación de experiencias en línea que cautivan y superan las expectativas. Mi objetivo es combinar la creatividad con la construcción de aplicaciones web altamente funcionales. Tomé la decisión de orientar mi carrera hacia el desarrollo Frontend - UI para combinar mis pasiones y crear experiencias de usuario excepcionales.
+        🚀 🚀 ¡Bienvenido! Soy una profesional que ha realizado una transición exitosa de ventas a desarrollo web, centrándome especialmente en el Frontend. Mi verdadera motivación surge de un profundo interés por el diseño y la creación de experiencias visuales cautivadoras. Encuentro inspiración en la posibilidad de aportar detalles significativos y construir soluciones que no solo sean funcionales, sino también estéticamente atractivas, para que las personas las utilicen y las disfruten. <br></br>
 
-        Soy una profesional autodidacta, apasionada por la búsqueda constante de conocimiento y desafíos que me permitan crecer y evolucionar a nivel laboral. Valorando profundamente mi capacidad para adaptarme al cambio, me destaco por aprender rápidamente en este emocionante mundo en constante evolución.
+       <br></br> Como Frontend, me especializo en la creación de sitios web enfocado a una buena experiencia del usuario. Cuento con sólidas habilidades en HTML, CSS, JavaScript y React estoy inmersa en un continuo proceso de aprendizaje, siempre explorando nuevas herramientas esenciales del desarrollo frontend.<br></br>
 
-        Mi compromiso va más allá de la simple creación de interfaces; me esfuerzo por construir soluciones digitales que no solo sean visualmente atractivas, sino también intuitivas y eficientes. Estoy emocionada por las oportunidades que el desarrollo Frontend y el diseño UI ofrecen, y estoy ansiosa por seguir explorando y creando en este apasionante campo. ¡Únete a mí en este viaje digital! 🌐
+       <br></br>Soy autodidacta aprendiendo tecnologías nuevas día tras día en la plataforma Platzi con relación a desarrollo front-end y diseño UX UI. <br></br>
+
+        Busco nuevas oportunidades que me desafíen y permitan seguir expandiendo mis conocimientos en el desarrollo web. ¡Estoy lista para aportar mi energía, pasión y habilidades a un equipo dinámico y en constante evolución! 🚀
       </p>
 
       {/* Enlace para descargar el currículum */}
-      <a className="aboutMe-CV" href="/Yeraldin Espinosa -CV.pdf" download="Yeraldin_Espinosa-CV.pdf">
+      <a className="aboutMe-CV" href={yeralCv} download="Yeraldin_Espinosa-CV.pdf">
         <span className="download-icon">
-          Resume CV
+          Descargar CV
           <span className="icon">
             <FaDownload />
           </span>

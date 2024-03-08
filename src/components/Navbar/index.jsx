@@ -29,7 +29,7 @@ function Navbar() {
         <li><NavLink to="/" className="active">Home</NavLink></li>
         <li><NavLink to="/SobreMi" className="active">Sobre Mi</NavLink></li>
         <li><NavLink to="/Habilidades" className="active">Habilidades</NavLink></li>
-        <li><NavLink to="/Projects" className="active">Projects</NavLink></li>
+        <li><NavLink to="/Projects" className="active">Proyectos</NavLink></li>
       </ul>
 
       {/* Icono para el menú móvil */}
@@ -48,4 +48,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export  {Navbar};
