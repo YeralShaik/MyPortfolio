@@ -8,6 +8,7 @@ import { Projects } from './components/Projects';
 
 import './styles/App.css';
 import { Footer } from './components/Footer';
+import { WhatsApp } from './components/Whatsapp-button';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/Projects" element={<Projects />} />
         <Route path="/" element={<Home />} />
       </Routes>
+      <WhatsApp/>
       <Footer />
     </Router>
   );

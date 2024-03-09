@@ -1,0 +1,25 @@
+.whatsapp-Container{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 0;
+    margin-right: 24px;
+    top: 500px;
+    background: #fd4692;
+    color: #ffec81;
+    padding: 10px;
+    border: none;
+    border-radius: 30px ;
+    box-shadow:  0 0 4px 2px #ffec814b;
+  }
+
+  .whatsapp-Icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .whatsapp-Container:hover {
+    background: #ffec81;
+    color: #b8014d;
+    
+  }

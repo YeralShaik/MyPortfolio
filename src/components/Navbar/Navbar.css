@@ -94,6 +94,7 @@
     cursor: pointer;
   }
   
+
   /* Estilos específicos para dispositivos móviles usando media query */
   
   @media only screen and (max-width: 600px) {

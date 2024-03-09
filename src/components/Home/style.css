@@ -9,11 +9,11 @@
     margin-right: 50px;
     padding-top: 40px;
     padding-bottom: 50px;
-    
-
   }
 
-
+.Home-container h4 {
+  margin: 0;
+}
   .Home-text {
     width: 100%;
     margin-top: 10px;
@@ -94,17 +94,18 @@
 
   }
   
-
   .social-Media--Icon {
     display: flex;
     height: 40px;
     justify-content: space-evenly;
     align-items: end;
-
-    
-  
   }
  
+  .star-Icon {
+    color: #f7fa68;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
 
 
 

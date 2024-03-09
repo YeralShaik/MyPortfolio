@@ -1,6 +1,5 @@
 import React from "react";
-import { FaDownload } from "react-icons/fa6";
-import yeralCv from '../../assets/Yeraldin Espinosa  CV.pdf'
+
 import './style.css'
 
 /**
@@ -24,15 +23,7 @@ const AboutMe = () => {
         Busco nuevas oportunidades que me desafíen y permitan seguir expandiendo mis conocimientos en el desarrollo web. ¡Estoy lista para aportar mi energía, pasión y habilidades a un equipo dinámico y en constante evolución! 🚀
       </p>
 
-      {/* Enlace para descargar el currículum */}
-      <a className="aboutMe-CV" href={yeralCv} download="Yeraldin_Espinosa-CV.pdf">
-        <span className="download-icon">
-          Descargar CV
-          <span className="icon">
-            <FaDownload />
-          </span>
-        </span>
-      </a>
+     
     </div>
   );
 };
