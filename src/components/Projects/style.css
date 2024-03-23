@@ -1,6 +1,6 @@
 .project-container{
     padding: 20px;
-    height: 380px;
+    height: auto;
     margin: 40px 70px 40px 70px  ;
     background: #e2dfe128;
     border-radius: 12px;
@@ -21,6 +21,7 @@
   margin-top: 16px;
 }
 .project {
+     height: auto;
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -115,7 +116,7 @@ a {
   height: 0px;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .project-container{
     padding: 20px;
     height: auto;
@@ -168,25 +169,78 @@ a {
   .github-link,
   .additional-link {
     width: 95px;
-    height: 24px;
-    margin-left: 10%;
+    height: 20px;
     justify-content: center;
     align-items: center;
+    font-size: 12;
   }
 
   .project-description {
     font-size: 20px;
     font-weight: 400;   
     width: 90%;
-    margin-top: 190px;
     text-align: center;
 
-
-    
   }
+
+  
+.link-Container{
+  align-items: flex-end;
+  display: inline-flex;
+  gap: 10px;
+}
+.github-link {
+  width: 100px;
+  height: 24px;
+  text-align: center;
+  flex: 1;
+  text-decoration: none;
+  padding: 12px;
+  background: #EA0599;
+  color: var(--secondary);
+  border-radius: 12px;
+  cursor: pointer;
+ 
 }
 
-@media only screen and (min-width: 600px) and (max-width: 991px) {
+.link {
+  width: 100px;
+  height: 24px;
+  text-align: center;
+  flex: 1;
+  text-decoration: none;
+  padding: 12px;
+  background: #EA0599;
+  color: var(--secondary);
+  border-radius: 12px;
+  cursor: pointer;
+
+}
+
+.github-link:hover,
+.link:hover {
+  background-color: #fdff81;
+  color: #540489;
+}
+
+/* Styles for the project description */
+.project-description {
+  font-size: 20px;
+  font-weight: 400; 
+  height: auto;
+
+}
+
+
+
+.link-Container{
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px)  {
   .project-container{
     padding: 20px;
     height: auto;
@@ -227,6 +281,12 @@ a {
 .github-link,
 .additional-link {
  
-  margin-left: 40%;
+  margin-left: 0%;
+}
+
+.link-Container{
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
 }
 }

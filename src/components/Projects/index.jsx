@@ -3,6 +3,7 @@ import React from 'react';
 import gitApp from '../../assets/Captura de pantalla 2023-12-18 112528.png';
 import happyPetImg from '../../assets/Captura de pantalla 2023-12-16 142540.png';
 import MovieStreamImg from '../../assets/Captura de pantalla 2023-12-16 133922.png';
+import Shaik2Img from '../../assets/Captura de pantalla 2024-03-23 152807.png';
 import ShaikImg from '../../assets/Captura de pantalla 2023-09-18 121752.png';
 import './style.css'
 
@@ -11,7 +12,15 @@ import './style.css'
  */
 const projectsData = [
   {
-    title: 'Web Shaik Asesores',
+    title: 'Página Web Shaik Asesores',
+    link: 'https://shaikasesores.netlify.app/',
+    imgSrc: Shaik2Img,
+    description: 'Se realizo un rediseño para Shaik Asesores, agregando secciones, formulario de datos, y diseño responsive',
+    tools: ['Figma', 'HTML', 'CSS', 'React', 'Vite' ],
+    githubLink: 'https://github.com/YeralShaik/Shaik-Asesores',
+  },
+  {
+    title: 'Landing Shaik Asesores',
     link: 'https://yeralshaik.github.io/ShaikAsesorespanama/',
     imgSrc: ShaikImg,
     description: 'Este proyecto consiste en la creación de una Landing Page para Shaik Asesores, una empresa panameña dedicada a brindar asesoramiento en préstamos personales. La página web está diseñada para ofrecer información sobre los servicios de la empresa y facilitar a los visitantes la solicitud de cotizaciones y más detalles sobre los préstamos personales que ofrecen.',
