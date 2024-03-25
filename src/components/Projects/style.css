@@ -230,7 +230,12 @@ a {
   height: auto;
 
 }
-
+a {
+  width: 0px;
+  margin: 0;
+  padding: 0;
+  height: 0px;
+}
 
 
 .link-Container{
