@@ -42,7 +42,15 @@
   text-align: left;
   text-shadow: 0 0 8px #5c1633;
   font-size: 40px;
+
 }
+@keyframes fade {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
  
   .text-occupation{
     margin-top: 4px;
@@ -51,6 +59,7 @@
     text-shadow: 0 0 8px #ac1f65; 
     font-weight:bold;
     font-size: 30px;
+    animation: fade 4s infinite;
   }
 
 
@@ -83,9 +92,9 @@
   .imgProfile {
     flex: 2; /* Ajusta este valor según sea necesario para dar más espacio a imgProfile */
     flex-basis: 0;
-    background-color: rgb(209, 167, 207);
+    background-color: #fdcfe2;
     border: solid #d6d6d6;
-    box-shadow: 0 0 28px #3c0263; /* Sombra del texto */
+    box-shadow: 0 0 18px #bdbdbd7a; /* Sombra del texto */
     width: 110%;
     height: auto;
     border-radius: 50%;
