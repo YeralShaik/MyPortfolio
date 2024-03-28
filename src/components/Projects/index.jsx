@@ -13,7 +13,7 @@ import './style.css'
 const projectsData = [
   {
     title: 'Página Web Shaik Asesores',
-    link: 'https://shaikasesores.netlify.app/',
+    link: 'https://shaikasesores.com',
     imgSrc: Shaik2Img,
     description: 'Se realizo un rediseño para Shaik Asesores, agregando secciones, formulario de datos, y diseño responsive',
     tools: ['Figma', 'HTML', 'CSS', 'React', 'Vite' ],

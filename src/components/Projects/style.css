@@ -4,6 +4,8 @@
     margin: 40px 70px 40px 70px  ;
     background: #e2dfe128;
     border-radius: 12px;
+    box-shadow: 2px 2px 2px 2PX #fda0ff;;
+    border-radius: 12px;
 }
 
 .project-Title {
@@ -12,7 +14,7 @@
     width: 100%;
     padding-left: 80PX;
     text-align: left;
-    color: #fdff81; 
+    color: #f52cf9; 
     text-shadow: 0 0 8px #4e052a; 
     font-size: 32px;
 
@@ -30,8 +32,8 @@
 }
 
 h2 {
-  color: #ffec81; 
-  text-shadow: 0 0 8px #5c1633;
+  color: #ffffff; 
+  text-shadow: 0 0 8px #4e052a; 
     padding-left: 24px ;
 }
 .project-img {
@@ -73,8 +75,9 @@ h2 {
   flex: 1;
   text-decoration: none;
   padding: 12px;
-  background: #fd4692;
-  color: var(--secondary);
+  border: solid #f52cf9;
+  box-shadow: 0 0 2px #f52cf9;
+  color: #f52cf9;
   border-radius: 12px;
   cursor: pointer;
  
@@ -87,8 +90,9 @@ h2 {
   flex: 1;
   text-decoration: none;
   padding: 12px;
-  background: #fd4692;
-  color: var(--secondary);
+  border: solid #f52cf9;
+  box-shadow: 0 0 2px #f52cf9;
+  color: #f52cf9;
   border-radius: 12px;
   cursor: pointer;
 
@@ -96,8 +100,8 @@ h2 {
 
 .github-link:hover,
 .link:hover {
-  background-color: #fdff81;
-  color: #540489;
+  background-color: #f52cf9;
+  color: #fff;
 }
 
 /* Styles for the project description */
@@ -189,6 +193,7 @@ a {
   display: inline-flex;
   gap: 10px;
 }
+
 .github-link {
   width: 100px;
   height: 24px;
@@ -196,8 +201,9 @@ a {
   flex: 1;
   text-decoration: none;
   padding: 12px;
-  background: #EA0599;
-  color: var(--secondary);
+  border: solid #f52cf9;
+  box-shadow: 0 0 2px #f52cf9;
+  color: #f52cf9;
   border-radius: 12px;
   cursor: pointer;
  
@@ -210,8 +216,9 @@ a {
   flex: 1;
   text-decoration: none;
   padding: 12px;
-  background: #EA0599;
-  color: var(--secondary);
+  border: solid #f52cf9;
+  box-shadow: 0 0 2px #f52cf9;
+  color: #f52cf9;
   border-radius: 12px;
   cursor: pointer;
 
@@ -219,8 +226,8 @@ a {
 
 .github-link:hover,
 .link:hover {
-  background-color: #fdff81;
-  color: #540489;
+  background-color: #f52cf9;
+  color: #fff;
 }
 
 /* Styles for the project description */
@@ -250,7 +257,7 @@ a {
     padding: 20px;
     height: auto;
     margin: 40px 40px 40px 40px  ;
-    background: #e2dfe128;
+    background: #e2dfe11c;
     border-radius: 12px;
     width: auto;
     
@@ -277,7 +284,7 @@ a {
     
     gap: 10px;
     font-style: italic;
-    color: rgba(255, 255, 255, 0.719);
+    color: rgba(255, 255, 255, 0.281);
     margin: 0px;
     padding: 10px;
     padding-top: 10px;

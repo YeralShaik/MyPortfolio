@@ -5,8 +5,8 @@
     right: 0;
     margin-right: 24px;
     top: 500px;
-    background: #fd4692;
-    color: #ffec81;
+    background: #f52cf9;
+    color: #fff;
     padding: 10px;
     border: none;
     border-radius: 30px ;
@@ -20,6 +20,7 @@
 
   .whatsapp-Container:hover {
     background: #ffec81;
-    color: #b8014d;
+    color: #f52cf9;
     
   }
+  

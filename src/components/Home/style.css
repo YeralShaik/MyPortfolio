@@ -5,8 +5,7 @@
     flex-direction: row; 
     width: auto;
     height: auto;
-    margin-left: 70px;
-    margin-right: 50px;
+    padding: 40px 70px 40px 70px;
     padding-top: 40px;
     padding-bottom: 50px;
   }
@@ -22,7 +21,7 @@
     order: 1;
     font-size: 28px;
     margin-left: 50px;
-      color: #eeeeee;
+      color: #fff;
   }
 
   .Home-img {
@@ -34,67 +33,53 @@
     align-items: center;
     justify-content: center;
   }
-
+.textTitle-container{
+  display: flex;
+}
 .name {
+  display: flex;
   margin: 4px;
   padding-top: 20px;
-  color: #ffec81;
+  color: #eeeeee;
   text-align: left;
-  text-shadow: 0 0 8px #5c1633;
+  text-shadow: 2px 2px 2px #caa1ca69;;
   font-size: 40px;
 
 }
-@keyframes fade {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
+.surname {
+  margin: 4px;
+  padding-top: 20px;
+  color: #f52cf9;
+  text-align: left;
+  text-shadow: 2px 2px 2px #caa1ca69;;
+  font-size: 40px;
+
 }
 
-
- 
   .text-occupation{
     margin-top: 4px;
     padding-top: 8px;
-    color: white;
-    text-shadow: 0 0 8px #ac1f65; 
+    color: #f52cf9;
     font-weight:bold;
     font-size: 30px;
-    animation: fade 4s infinite;
+    text-shadow: 2px 2px 2px #caa1ca69;;
   }
 
 
   .bienvenida {
-    width: 80%;
+    width: auto;
     font-size: 20px;
     margin-top: 24px;
     text-align: justify;
+    text-shadow: 2px 2px 2px #caa1ca69;;
   }
-.Contact {
-    width: 130px;
-    height: 48px;
-    margin-top: 32px;
-    color: #d6d6d6;
-    background: #EA0599;
-    border-radius: 10px;
-    border-style: none;
-    font-size: 16px;
-    font-weight: bold;
-      overflow: hidden;
-  box-shadow: 0 0 8px #4e052a;
-  }
-.Contact:hover {
-  background-color: #fdff81;
-  color: #540489;
-    overflow: hidden;
-  box-shadow: 0 0 10px #ff97d5;
-}
 
   .imgProfile {
     flex: 2; /* Ajusta este valor según sea necesario para dar más espacio a imgProfile */
     flex-basis: 0;
-    background-color: #fdcfe2;
-    border: solid #d6d6d6;
-    box-shadow: 0 0 18px #bdbdbd7a; /* Sombra del texto */
+    background-color: #1c1c1d;
+    border: solid #f52cf9;
+    box-shadow: 0 0 24px #f52cf9;
     width: 110%;
     height: auto;
     border-radius: 50%;
@@ -102,14 +87,70 @@
     z-index: 1;
 
   }
+
   
+  .imgProfile:hover {
+    transform: translateY(-5px) scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    border: solid #f52cf9;
+    box-shadow: 0 0 40px #f52cf9;
+
+}.imgProfile {
+  transform: translateY(0px) scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+
+  .cv-button {
+    background: #f52cf9;
+    color: #fff;
+    box-shadow: 0 0 18px #f52cf9;
+    width: 180px;
+    padding: 16px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 16px;
+    margin-top: 24px;
+  
+    text-decoration: none;
+  }
+  .cv-button:hover {
+    background: #f7fa68;
+    color: #f52cf9;
+  }
   .social-Media--Icon {
     display: flex;
     height: 40px;
+    gap: 12px;
     justify-content: space-evenly;
     align-items: end;
+    
   }
- 
+ .instagram-Icon,
+ .linkedin-Icon,
+.github-Icon {
+  border-radius: 50%;
+  border: solid 2px #f52cf9;
+  padding: 12px;
+  color: #f52cf9;
+  width: 24px;
+  height: 24px;
+}
+
+.instagram-Icon:hover ,
+.linkedin-Icon:hover ,
+.github-Icon:hover {
+  border-radius: 50%;
+  border: solid 2px #f52cf9;
+  padding: 12px;
+  color: #fff;
+  background: #f52cf9;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-5px) scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
   .star-Icon {
     color: #f7fa68;
     padding-right: 8px;
@@ -129,30 +170,41 @@
   justify-content: center;
   width: auto;
   height: auto;
-  margin-left: 10px;
-  margin-right: 20px;
-  padding-top: 80px;
-  padding-bottom: 200px;
+  padding: 40px 70px 40px 70px;
+margin: 0;
 
 
 }
 
-#name {
-font-size: 32px;
-text-align: center;
 
-}
-
-
-.Home-text {
-  width: 100%;
-  text-align: center;
-  margin-top: 10px;
+.name {
+  display: flex;
+  padding-top: 16px;
+  color: #eeeeee;
   text-align: left;
-  padding: 12px;
+  text-shadow: 2px 2px 2px #caa1ca69;;
+  font-size: 32px;
+
+}
+.surname {
+  margin: 4px;
+  padding-top: 16px;
+  color: #f52cf9;
+  text-align: left;
+  text-shadow: 2px 2px 2px #caa1ca69;;
+  font-size: 32px;
+
+}
+.Home-text {
+  width: auto;
+
+  text-align: center;
+  margin-top: 20px;
+  text-align: left;
+  padding: 30px;
   order: 2;
   font-size: 28px;
-  margin-left: 50px;
+  margin-left: 0px;
     color: #eeeeee;
 }
 
@@ -185,20 +237,66 @@ text-align: center;
   place-items: center;
 }
 .imgProfile {
-  place-items: center;
-    width: 60%;
+  flex: 2; /* Ajusta este valor según sea necesario para dar más espacio a imgProfile */
+  flex-basis: 0;
+  background-color: #1c1c1d;
+  border: solid #f52cf9;
+  box-shadow: 0 0 24px #f52cf9;
+  width: 50%;
   height: auto;
- 
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+
 }
-.sociall-Media--Icon {
+
+
+.imgProfile:hover {
+  transform: translateY(-5px) scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  border: solid #f52cf9;
+  box-shadow: 0 0 40px #f52cf9;
+
+}.imgProfile {
+transform: translateY(0px) scale(1);
+transition: transform 0.5s ease-in-out;
+}
+
+.social-Media--Icon {
   display: flex;
-  height: 40px;
-  gap: 20px;
+  padding: 14px;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: 0;
 
 }
- .social-Media--Icon img {
-  width: 20px;
 
- }
+.instagram-Icon,
+.linkedin-Icon,
+.github-Icon {
+ border-radius: 50%;
+ border: solid 2px #f52cf9;
+ padding: 12px;
+ color: #f52cf9;
+ width: 24px;
+ height: 24px;
+margin: 0;
+}
+
+.instagram-Icon:hover ,
+.linkedin-Icon:hover ,
+.github-Icon:hover {
+ border-radius: 50%;
+ border: solid 2px #f52cf9;
+ padding: 12px;
+ color: #fff;
+ background: #f52cf9;
+ width: 24px;
+ height: 24px;
+ transform: translateY(-5px) scale(1.2);
+ transition: transform 0.3s ease-in-out;
+}
+
 
 }

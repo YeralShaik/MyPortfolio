@@ -2,7 +2,7 @@
     padding-top: 20px;
     width: 80%;
     text-align: left;
-    color: #fdff81; 
+    color: #f52cf9; 
     text-shadow: 0 0 8px #4e052a; 
     font-size: 32px;
 
@@ -35,6 +35,7 @@
     padding: 12px;
     margin: 10px;
     background: #ebebeb36;
+    box-shadow: 2px 2px 2px #fda0ff;;
     border-radius: 12px;
 
 

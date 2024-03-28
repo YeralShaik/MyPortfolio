@@ -23,7 +23,9 @@ function Navbar() {
     <nav className="navBar-container">
       {/* Logo de la barra de navegación */}
       <div className="navlogo">
-        <h1>  Portfolio </h1>
+        <h1 className="name-Logo"> Yeraldin</h1>
+        <h1 className="surname-Logo"> Espinosa</h1>
+
       </div>
 
       {/* Barra de navegación para escritorio */}
